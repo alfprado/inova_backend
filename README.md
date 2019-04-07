@@ -22,11 +22,17 @@ configure as variaveis de ambiente no arquivo .env
 
 execute o comando abaixo para criar as tabelas do banco de dados
 
-```js
+```bash
 adonis migration:run
 ```
 execute o seed para criação do usuário admin
 
 ```bash
 adonis seed
+```
+
+### Execução 
+
+```bash
+adonis serve
 ```
