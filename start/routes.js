@@ -16,10 +16,10 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.post('/users', 'UserController.create').middleware('auth')
+Route.post('/users', 'UserController.create')
 
 Route.post('/sessions', 'SessionController.create')
 
 Route.get('/weights', 'WeightController.index').middleware('auth')
 
-Route.post('/weights', 'WeightController.store')
+Route.post('/weights', 'WeightController.store').middleware('auth')

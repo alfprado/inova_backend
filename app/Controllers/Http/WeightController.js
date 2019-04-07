@@ -34,10 +34,12 @@ class WeightController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async store({ request, response }) {
+  async store({ request }) {
 
     const data = request.only(['weight', 'latitude', 'longitude'])
+
     const weight = await Weight.create({ ...data });
+
     return weight
   }
 }
