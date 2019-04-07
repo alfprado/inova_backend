@@ -16,6 +16,8 @@ instale as dependências
 npm install
 ```
 
+configure as variaveis de ambiente no arquivo .env
+
 ### Migrations
 
 execute o comando abaixo para criar as tabelas do banco de dados
