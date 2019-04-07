@@ -1,28 +1,30 @@
-# Adonis API application
+# Inova API
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+## Instalação
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
-
-## Setup
-
-Use the adonis command to install the blueprint
+clone o repositório
 
 ```bash
-adonis new yardstick --api-only
+git clone https://github.com/alfprado/inova_backend.git
 ```
-
-or manually clone the repo and then run `npm install`.
-
+entre no diretório inova_backend
+```bash
+cd inova_backend
+```
+instale as dependências
+```bash
+npm install
+```
 
 ### Migrations
 
-Run the following command to run startup migrations.
+execute o comando abaixo para criar as tabelas do banco de dados
 
 ```js
 adonis migration:run
+```
+execute o seed para criação do usuário admin
+
+```bash
+adonis seed
 ```
