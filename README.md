@@ -31,6 +31,8 @@ execute o seed para criação do usuário admin
 adonis seed
 ```
 
+#### usuário: admin
+#### senha: 123
 ### Execução 
 
 ```bash
