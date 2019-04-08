@@ -7,9 +7,9 @@ class WeightSchema extends Schema {
   up() {
     this.create('weights', (table) => {
       table.increments()
-      table.decimal('weight', 2).notNullable()
-      table.decimal('latitude').notNullable()
-      table.decimal('longitude').notNullable()
+      table.double('weight').notNullable()
+      table.double('latitude').notNullable()
+      table.double('longitude').notNullable()
       table.timestamps()
     })
   }
